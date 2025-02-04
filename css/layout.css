@@ -67,10 +67,10 @@ body {
   font-weight: bold;
 }
 .sidebar-header h2 {
-  color: white;
+  color: transparent;
 }
 .sidebar-heading {
-  color: white;
+  color: transparent;
 }
 .nav-link {
   color: white;
