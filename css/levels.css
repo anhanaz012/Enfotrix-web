@@ -205,4 +205,24 @@
     width: 45%;
     padding: 20px;
   }
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tab {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    background: #e8eaf6;
+    color: var(--bs-secondary);
+    cursor: pointer;
+    max-width: 250px;
+    border-radius: 25px;
+    margin: 5px;
+    transition: 0.3s;
+    font-size: 12px;
+  }
 }
