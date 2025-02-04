@@ -1,0 +1,190 @@
+:root {
+  --bs-primary: #2c3e50; /* Base */
+  --bs-secondary: #4a6e8d; /* Badges, etc. */
+  --bs-text: #f0f0f0; /* Text */
+  --white: #fefefe;
+  --bs-body-bg: #101425;
+  --bs-gray: lightgrey;
+  --bs-dark: #343a40;
+  --bs-border-color: #dee2e6;
+  --primary-font: "Montserrat", sans-serif;
+  --navbar-bg: #333;
+  --link-hover-color: #4a6e8d;
+  --scrollbar-thumb: #495057;
+}
+
+/* Level Section */
+.container {
+  width: 100%;
+  margin-top: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 250px;
+  height: calc(100vh - 56px);
+}
+/* Adjust content margin on smaller screens */
+@media (max-width: 768px) {
+  .container {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 10px;
+  }
+}
+.level-section {
+  text-align: center;
+}
+
+.level-circle {
+  width: 120px;
+  height: 120px;
+  border: 6px solid var(--bs-secondary);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 14px;
+  color: var(--white);
+}
+.level-circle span {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--bs-secondary);
+}
+
+.current-label {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  width: 60%;
+  max-width: 200px;
+  height: 12px;
+  background: #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.progress {
+  width: 50%;
+  height: 100%;
+  background: var(--bs-secondary);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tab {
+  padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  background: #e8eaf6;
+  color: var(--bs-secondary);
+  cursor: pointer;
+  max-width: 250px;
+  border-radius: 25px;
+  margin: 5px;
+  transition: 0.3s;
+  font-size: 14.5px;
+}
+
+.tab.active {
+  background: var(--bs-secondary);
+  color: white;
+}
+
+.tab.locked {
+  color: #495057;
+  cursor: not-allowed;
+}
+.tab i {
+  color: #495057;
+}
+/* Referrals */
+.referrals-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 80%;
+  justify-content: center;
+  margin: 10px auto;
+  gap: 20px;
+}
+
+.referral-card.locked {
+  color: #aaa;
+}
+
+.referral-card {
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-dark);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.levels-icons-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Icon Container */
+.icon-container {
+  width: 40px;
+  height: 40px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lock Icon */
+.icon-container i {
+  font-size: 16px;
+  color: #666;
+}
+/* Text Container */
+.text-container {
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.text-container h5 {
+  font-size: 15px;
+  color: var(--white);
+}
+
+.text-container small {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Chevron Icon */
+.fa-chevron-right {
+  font-size: 14px;
+  color: #aaa;
+}
